@@ -1,16 +1,34 @@
 # BengIsleHUD
 
-HUD tiếng Việt cho **The Isle (Evrima)** trên Windows: bảng chỉ số khủng long, bản đồ nhỏ theo thời gian thực, nhật ký cắn / bị cắn, bảng Prime của server và vị trí nhóm.
+HUD tiếng Việt cho **The Isle (Evrima)** trên Windows: bảng chỉ số khủng long, bản đồ nhỏ theo thời gian thực, nhật ký cắn / bị cắn, số damage bay, bảng Prime của server và vị trí nhóm.
 
 HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì vào game, không chỉnh sửa game, không đọc bộ nhớ game.
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Tải về
+## Bản mới nhất: 1.0.2 (07/11/2026)
 
-**[Tải bản mới nhất (BengIsleHUD-Setup)](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*, tải file `BengIsleHUD-Setup-x.y.z.exe`.
+**Khác bản 1.0.1** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-Các file `.blockmap` và `latest.yml` dùng cho tự cập nhật, không cần tải.
+- **Số damage bay giữa màn hình**: mình cắn số xanh, bị cắn số đỏ, nảy lên rồi mờ dần trong 2 giây. Cú càng nặng so với máu tối đa của con bị cắn thì chữ càng to (3 cỡ). Hạ gục / bị giết chữ vàng. Bật / tắt: F9 > "Số damage bay giữa màn hình".
+- **Báo khi con của bạn chết**: nhật ký hiện `... > Tên bạn: máu/0 · BỊ GIẾT`, bảng máu về 0. Đúng cả khi chết vì chảy máu. Bấm respawn trong menu cũng tính là chết.
+- **Vị trí nhóm mượt hơn**: cập nhật 0,5 giây/lần (trước 1 giây), chấm của bạn trượt đều trên bản đồ.
+
+**[Tải BengIsleHUD-Setup-1.0.2.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.2".
+
+## Hình ảnh
+
+Đang đánh nhau: bản đồ nhỏ (trái trên), nhật ký cắn / bị cắn (trái), số damage bay (giữa), bảng chỉ số (phải):
+
+![HUD khi đánh nhau](docs/images/1-hud-danh-nhau.jpg)
+
+Có bản mới: 2 dòng nhỏ ở trên cùng màn hình, không che game:
+
+![Thông báo bản mới](docs/images/2-banner-ban-moi.jpg)
+
+F9: cài đặt, kéo thả các bảng, mục Phiên bản có nút cập nhật và nội dung bản mới:
+
+![Bảng F9](docs/images/3-f9-cap-nhat.jpg)
 
 ## Cài (1 lần, khoảng 3 phút)
 
@@ -44,7 +62,7 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 
 | Phím | Việc |
 |---|---|
-| **F9** | Cài đặt, kéo thả vị trí các bảng, bật / tắt từng bảng, cập nhật |
+| **F9** | Cài đặt, kéo thả vị trí các bảng, bật / tắt từng phần, cập nhật |
 | **F8** | Hiện / ẩn bảng Prime: tab *Prime Quest* và *Pack dino (garage)* |
 | **F7** | Đăng nhập Steam vào trang web server |
 | **F6** | Đặt điểm hẹn từ toạ độ đã chép (bấm lần nữa để xoá) |
@@ -52,22 +70,25 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 
 ## Tính năng
 
-- **Bảng khủng long**: tên loài, % Growth (75 % = lớn tối đa, trên 75 % là Prime), Máu, Thể lực, Thức ăn, Nước; *Chảy máu* chỉ hiện khi đang mất máu.
-- **Bản đồ nhỏ**: bản đồ Gateway có vùng, tên khu vực; vị trí và hướng của bạn, cả khi bay.
-- **Nhật ký cắn / bị cắn**: luôn hiện 5 dòng gần nhất trên màn hình, dòng mới ở trên.
+- **Bảng khủng long**: tên loài, % Growth (75 % = lớn tối đa, trên 75 % là Prime), Máu, Thể lực, Thức ăn, Nước; *Chảy máu* chỉ hiện khi đang mất máu. Máu khi đánh nhau khớp nhật ký trận đấu trên web server.
+- **Nhật ký cắn / bị cắn** (bên trái): luôn hiện 5 dòng gần nhất, dòng mới ở trên, dòng cũ mờ dần.
   - Bạn cắn: `Tên bạn > Ceratosaurus: damage/máu còn lại`
   - Bị cắn: `Không rõ > Tên bạn: damage/máu còn lại`
-- **Điểm hẹn**: chép toạ độ bạn gửi (nút copy vị trí trong game), bấm F6: bản đồ có đường chỉ tới và khoảng cách.
-- **Vị trí nhóm thời gian thực**: cả nhóm cùng cài HUD, **F9 > tick "Chia sẻ vị trí với nhóm"**, nhập **cùng một mã nhóm** (ít nhất 4 ký tự, đừng dùng mã dễ đoán) và điền *Tên nhân vật*. Mọi người thấy nhau trên bản đồ nhỏ và bản đồ lớn ở mọi khoảng cách, cập nhật mỗi giây, tối đa 30 người. Chỉ gửi vị trí con của chính mình, máy chủ không lưu gì.
+  - Khi bạn chết: `... > Tên bạn: máu/0 · BỊ GIẾT`
+- **Số damage bay giữa màn hình**: xanh = mình cắn, đỏ = bị cắn, vàng = hạ gục / bị giết; 3 cỡ theo độ nặng của cú.
+- **Bản đồ nhỏ**: bản đồ Gateway có vùng, tên khu vực; vị trí và hướng của bạn, cả khi bay.
+- **Bản đồ lớn (F4)** và **điểm hẹn (F6)**: chép toạ độ bạn gửi (nút copy vị trí trong game), bấm F6: bản đồ có đường chỉ tới và khoảng cách.
+- **Vị trí nhóm thời gian thực**: cả nhóm cùng cài HUD, **F9 > tick "Chia sẻ vị trí với nhóm"**, nhập **cùng một mã nhóm** và điền *Tên nhân vật*. Mọi người thấy nhau trên bản đồ nhỏ và bản đồ lớn ở mọi khoảng cách, cập nhật 0,5 giây/lần, tối đa 30 người. Chỉ gửi vị trí con của chính mình, máy chủ không lưu gì.
+  - Nên dùng mã nhóm **dài, khó đoán** (ví dụ `beng-ca-heo-7391`), đừng dùng tên server hay `1234`.
 - **Bảng Prime (F8)**: trang Prime Quest và Pack dino của web server, mỗi server nhớ riêng.
 - Chuột bấm xuyên qua HUD, không vướng khi chơi. Chạy được khi bật hay tắt Cloudflare WARP.
 
 ## Chưa có / lưu ý
 
 - Tên kẻ cắn mình (đang hiện *"Không rõ"*).
-- Cú cắn làm mình chết chưa hiện tin.
+- Tên AI (động vật) bị cắn; máu AI đọc được với Boar và Deer.
 - Con đã ở gần bạn trước khi bật HUD có thể chưa có tên loài.
-- Tên AI (động vật) bị cắn chưa có; máu AI đọc được với Boar và Deer.
+- Bản portable (nếu có) không tự cập nhật, chỉ bản cài mới tự cập nhật.
 
 ## Khi có lỗi
 
@@ -78,3 +99,21 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 ```
 
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
+
+## Nhật ký phiên bản
+
+### 1.0.2 (07/11/2026)
+- Số damage bay giữa màn hình (3 cỡ, 2 giây; hạ gục / bị giết chữ vàng).
+- Báo khi con của bạn chết (cả chết vì chảy máu).
+- Vị trí nhóm 0,5 giây/lần, chấm trượt mượt.
+
+### 1.0.1 (06/11/2026)
+- Có bản mới: chỉ hiện 2 dòng nhỏ ở trên cùng màn hình, không còn thông báo to giữa màn hình khi đang chơi.
+- F9 > Phiên bản: hiện nội dung bản cập nhật, cài khi muốn.
+- Nhật ký cắn / bị cắn đứng yên trên màn hình (5 dòng gần nhất), không tự biến mất.
+
+### 1.0.0 (06/11/2026)
+- Bản cài đầu tiên, có tự cập nhật.
+- Máu khi đánh nhau khớp nhật ký web; tên loài con bị cắn; máu AI (Boar, Deer); % Growth.
+- F4 bản đồ lớn, F6 điểm hẹn, F7 đăng nhập Steam, F8 Prime / Pack dino, F9 cài đặt.
+- Vị trí nhóm thời gian thực.
