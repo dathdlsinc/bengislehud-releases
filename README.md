@@ -6,15 +6,19 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.2 (07/11/2026)
+## Bản mới nhất: 1.0.3 (07/11/2026)
 
-**Khác bản 1.0.1** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.2** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Số damage bay giữa màn hình**: mình cắn số xanh, bị cắn số đỏ, nảy lên rồi mờ dần trong 2 giây. Cú càng nặng so với máu tối đa của con bị cắn thì chữ càng to (3 cỡ). Hạ gục / bị giết chữ vàng. Bật / tắt: F9 > "Số damage bay giữa màn hình".
-- **Báo khi con của bạn chết**: nhật ký hiện `... > Tên bạn: máu/0 · BỊ GIẾT`, bảng máu về 0. Đúng cả khi chết vì chảy máu. Bấm respawn trong menu cũng tính là chết.
-- **Vị trí nhóm mượt hơn**: cập nhật 0,5 giây/lần (trước 1 giây), chấm của bạn trượt đều trên bản đồ.
+- **Sửa báo trừ máu sai** khi nhảy và khi ăn (máu tụt về gần 0 rồi trở lại).
+- **Sửa % Growth**: khủng long mới vào bắt đầu từ 25 % như trong game (trước HUD tính từ 0 %), lớn tối đa 75 %, trên 75 % là Prime.
+- **Cắn AI (Deer, Boar) chính xác hơn**: có cả cú đầu tiên và báo "HẠ GỤC" khi giết được.
+- **Số damage bay có thêm máu còn lại / máu tối đa** ngay bên dưới (vd `1,862/2,400`).
+- **Báo chết chính xác hơn** (thêm kiểu chết khi bị khủng long khác cắn).
+- **Server PVN**: hiện được máu (từ lúc máu thay đổi lần đầu, vd sau khi bị cắn hoặc ngã).
+- **F8**: 2 tab *Prime Quest* và *Pack dino (garage)* không còn dính nhau; trên PVN tab Prime chỉ hiện thẻ Tiến độ Prime.
 
-**[Tải BengIsleHUD-Setup-1.0.2.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.2".
+**[Tải BengIsleHUD-Setup-1.0.3.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.3".
 
 ## Hình ảnh
 
@@ -70,12 +74,12 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 
 ## Tính năng
 
-- **Bảng khủng long**: tên loài, % Growth (75 % = lớn tối đa, trên 75 % là Prime), Máu, Thể lực, Thức ăn, Nước; *Chảy máu* chỉ hiện khi đang mất máu. Máu khi đánh nhau khớp nhật ký trận đấu trên web server.
+- **Bảng khủng long**: tên loài, % Growth (mới vào 25 %, 75 % = lớn tối đa, trên 75 % là Prime), Máu, Thể lực, Thức ăn, Nước; *Chảy máu* chỉ hiện khi đang mất máu. Máu khi đánh nhau khớp nhật ký trận đấu trên web server.
 - **Nhật ký cắn / bị cắn** (bên trái): luôn hiện 5 dòng gần nhất, dòng mới ở trên, dòng cũ mờ dần.
   - Bạn cắn: `Tên bạn > Ceratosaurus: damage/máu còn lại`
   - Bị cắn: `Không rõ > Tên bạn: damage/máu còn lại`
   - Khi bạn chết: `... > Tên bạn: máu/0 · BỊ GIẾT`
-- **Số damage bay giữa màn hình**: xanh = mình cắn, đỏ = bị cắn, vàng = hạ gục / bị giết; 3 cỡ theo độ nặng của cú.
+- **Số damage bay giữa màn hình**: xanh = mình cắn, đỏ = bị cắn, vàng = hạ gục / bị giết; 3 cỡ theo độ nặng của cú; bên dưới là máu còn lại / máu tối đa.
 - **Bản đồ nhỏ**: bản đồ Gateway có vùng, tên khu vực; vị trí và hướng của bạn, cả khi bay.
 - **Bản đồ lớn (F4)** và **điểm hẹn (F6)**: chép toạ độ bạn gửi (nút copy vị trí trong game), bấm F6: bản đồ có đường chỉ tới và khoảng cách.
 - **Vị trí nhóm thời gian thực**: cả nhóm cùng cài HUD, **F9 > tick "Chia sẻ vị trí với nhóm"**, nhập **cùng một mã nhóm** và điền *Tên nhân vật*. Mọi người thấy nhau trên bản đồ nhỏ và bản đồ lớn ở mọi khoảng cách, cập nhật 0,5 giây/lần, tối đa 30 người. Chỉ gửi vị trí con của chính mình, máy chủ không lưu gì.
@@ -86,7 +90,8 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 ## Chưa có / lưu ý
 
 - Tên kẻ cắn mình (đang hiện *"Không rõ"*).
-- Tên AI (động vật) bị cắn; máu AI đọc được với Boar và Deer.
+- Tên AI (động vật) bị cắn; máu AI đọc được với Boar và Deer (loại AI khác chưa có).
+- Server PVN: chưa có máu trước lần đổi đầu tiên, chưa có máu tối đa và thể lực.
 - Con đã ở gần bạn trước khi bật HUD có thể chưa có tên loài.
 - Bản portable (nếu có) không tự cập nhật, chỉ bản cài mới tự cập nhật.
 
@@ -101,6 +106,14 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.3 (07/11/2026)
+- Sửa báo trừ máu sai khi nhảy / khi ăn.
+- Sửa % Growth (bắt đầu 25 %).
+- Cắn AI: có cú đầu và báo hạ gục.
+- Số damage bay kèm máu còn lại / tối đa.
+- Báo chết chính xác hơn.
+- PVN hiện máu; F8 sửa tab và thẻ Prime trên PVN.
 
 ### 1.0.2 (07/11/2026)
 - Số damage bay giữa màn hình (3 cỡ, 2 giây; hạ gục / bị giết chữ vàng).
