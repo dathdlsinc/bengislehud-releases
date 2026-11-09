@@ -6,17 +6,16 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.5 (09/11/2026)
+## Bản mới nhất: 1.0.6 (09/11/2026)
 
-**Khác bản 1.0.4** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.5** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Cập nhật hoặc mở lại HUD giữa trận**: hiện lại máu, thể lực, đói, khát ngay (trước phải chờ máu thay đổi mới hiện).
-- **Đổi con khi máu đầy** (garage, đổi loài): báo **"ĐỔI CON"** thay vì "BỊ GIẾT". Con nhỏ bị cắn chết 1 phát vẫn báo BỊ GIẾT.
-- **Sửa máu tụt ảo** kiểu 49/1694 (đọc nhầm một chỉ số phụ thành máu).
-- **AI có tên**: nhật ký hiện "Boar", "Deer" thay vì "Mục tiêu #số". Bắt được thêm cú cắn AI bị sót.
-- **Số bay khi cắn người chơi khác**: bỏ "máu tối đa" sai (kiểu 1793/816) và số máu rác.
+- **Bản đồ mới** từ [IsleMaps](https://www.islemaps.com) (Pont & Emeara, được phép dùng): vị trí khớp hơn nhiều, biển gần đen, nước ngọt xanh sáng, đầm lầy đầy đủ.
+- **Vùng tuần tra AI** màu đỏ nằm trên vùng di cư (không bị đè).
+- **F9 > Lớp bản đồ**: bật / tắt Nước ngọt, Vùng di cư, Khu bảo tồn, Vùng tuần tra AI, Tên vùng.
+- **Bỏ báo "ĐỔI CON"** của 1.0.5: mất con luôn báo BỊ GIẾT (Rex / Trike cắn chết 1 phát từ máu đầy là có thật).
 
-**[Tải BengIsleHUD-Setup-1.0.5.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.5".
+**[Tải BengIsleHUD-Setup-1.0.6.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.6".
 
 ## Hình ảnh
 
@@ -93,6 +92,10 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 - Con đã ở gần bạn trước khi bật HUD có thể chưa có tên loài.
 - Bản portable (nếu có) không tự cập nhật, chỉ bản cài mới tự cập nhật.
 
+## Nguồn bản đồ
+
+Bản đồ Gateway, lớp nước ngọt, vùng di cư, khu bảo tồn: [IsleMaps](https://www.islemaps.com) của Pont & Emeara, dùng với sự cho phép của tác giả. Vùng tuần tra AI và tên địa danh: myislemap.com.
+
 ## Khi có lỗi
 
 Tắt HUD, mở **PowerShell**, chạy lệnh dưới để chép file log ra Desktop:
@@ -105,9 +108,14 @@ Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm g
 
 ## Nhật ký phiên bản
 
+### 1.0.6 (09/11/2026)
+- Bản đồ IsleMaps (Pont & Emeara, được phép dùng): vị trí khớp hơn, biển gần đen, nước ngọt, đầm lầy, di cư, bảo tồn.
+- Vùng tuần tra AI đỏ nằm trên cùng; F9 bật / tắt từng lớp bản đồ.
+- Bỏ báo "ĐỔI CON" (luôn báo BỊ GIẾT).
+
 ### 1.0.5 (09/11/2026)
 - Mở lại / cập nhật giữa trận vẫn hiện máu và chỉ số ngay.
-- Đổi con khi máu đầy báo "ĐỔI CON", không báo BỊ GIẾT.
+- (Đã bỏ ở 1.0.6) Đổi con khi máu đầy báo "ĐỔI CON".
 - Sửa máu tụt ảo (chỉ số phụ đọc nhầm thành máu).
 - Tên AI (Boar, Deer); bắt thêm cú cắn AI bị sót.
 - Bỏ máu tối đa sai và số rác khi cắn người chơi khác.
