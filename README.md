@@ -6,19 +6,15 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.3 (07/11/2026)
+## Bản mới nhất: 1.0.4 (09/11/2026)
 
-**Khác bản 1.0.2** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.3** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Sửa báo trừ máu sai** khi nhảy và khi ăn (máu tụt về gần 0 rồi trở lại).
-- **Sửa % Growth**: khủng long mới vào bắt đầu từ 25 % như trong game (trước HUD tính từ 0 %), lớn tối đa 75 %, trên 75 % là Prime.
-- **Cắn AI (Deer, Boar) chính xác hơn**: có cả cú đầu tiên và báo "HẠ GỤC" khi giết được.
-- **Số damage bay có thêm máu còn lại / máu tối đa** ngay bên dưới (vd `1,862/2,400`).
-- **Báo chết chính xác hơn** (thêm kiểu chết khi bị khủng long khác cắn).
-- **Server PVN**: hiện được máu (từ lúc máu thay đổi lần đầu, vd sau khi bị cắn hoặc ngã).
-- **F8**: 2 tab *Prime Quest* và *Pack dino (garage)* không còn dính nhau; trên PVN tab Prime chỉ hiện thẻ Tiến độ Prime.
+- **Bản đồ lớn (F4) đặt được điểm hẹn**: chuột phải hoặc đúp chuột; hoặc phím mũi tên / WASD đưa dấu **+** giữa bản đồ tới chỗ cần rồi bấm **Enter** (nút "Đặt điểm (Enter)"). Kéo, cuộn, nút +/- trên bản đồ lớn cũng chạy lại.
+- **Phím điểm hẹn đổi từ F6 sang F5** (F6 là phím mở chat của game). Đổi được các phím điểm hẹn, bản đồ lớn, đăng nhập trong F9.
+- **% Growth phần Prime** (trên 75 %) khớp với web.
 
-**[Tải BengIsleHUD-Setup-1.0.3.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.3".
+**[Tải BengIsleHUD-Setup-1.0.4.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.4".
 
 ## Hình ảnh
 
@@ -69,8 +65,8 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 | **F9** | Cài đặt, kéo thả vị trí các bảng, bật / tắt từng phần, cập nhật |
 | **F8** | Hiện / ẩn bảng Prime: tab *Prime Quest* và *Pack dino (garage)* |
 | **F7** | Đăng nhập Steam vào trang web server |
-| **F6** | Đặt điểm hẹn từ toạ độ đã chép (bấm lần nữa để xoá) |
-| **F4** | Bản đồ lớn: kéo để xem, +/- để phóng to, chuột phải để đánh dấu điểm, Esc để đóng |
+| **F5** | Đặt điểm hẹn từ toạ độ đã chép (bấm lần nữa để xoá) |
+| **F4** | Bản đồ lớn: kéo để xem, +/- để phóng to, chuột phải / đúp chuột hoặc dấu + và Enter để đánh dấu điểm, Esc để đóng |
 
 ## Tính năng
 
@@ -81,7 +77,7 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
   - Khi bạn chết: `... > Tên bạn: máu/0 · BỊ GIẾT`
 - **Số damage bay giữa màn hình**: xanh = mình cắn, đỏ = bị cắn, vàng = hạ gục / bị giết; 3 cỡ theo độ nặng của cú; bên dưới là máu còn lại / máu tối đa.
 - **Bản đồ nhỏ**: bản đồ Gateway có vùng, tên khu vực; vị trí và hướng của bạn, cả khi bay.
-- **Bản đồ lớn (F4)** và **điểm hẹn (F6)**: chép toạ độ bạn gửi (nút copy vị trí trong game), bấm F6: bản đồ có đường chỉ tới và khoảng cách.
+- **Bản đồ lớn (F4)** và **điểm hẹn (F6)**: chép toạ độ bạn gửi (nút copy vị trí trong game), bấm F5: bản đồ có đường chỉ tới và khoảng cách.
 - **Vị trí nhóm thời gian thực**: cả nhóm cùng cài HUD, **F9 > tick "Chia sẻ vị trí với nhóm"**, nhập **cùng một mã nhóm** và điền *Tên nhân vật*. Mọi người thấy nhau trên bản đồ nhỏ và bản đồ lớn ở mọi khoảng cách, cập nhật 0,5 giây/lần, tối đa 30 người. Chỉ gửi vị trí con của chính mình, máy chủ không lưu gì.
   - Nên dùng mã nhóm **dài, khó đoán** (ví dụ `beng-ca-heo-7391`), đừng dùng tên server hay `1234`.
 - **Bảng Prime (F8)**: trang Prime Quest và Pack dino của web server, mỗi server nhớ riêng.
@@ -106,6 +102,11 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.4 (09/11/2026)
+- Bản đồ lớn F4 đặt được điểm hẹn (chuột phải, đúp chuột, dấu + và Enter).
+- Phím điểm hẹn F6 -> F5; đổi phím trong F9.
+- % Growth phần Prime khớp web.
 
 ### 1.0.3 (07/11/2026)
 - Sửa báo trừ máu sai khi nhảy / khi ăn.
