@@ -6,15 +6,17 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.4 (09/11/2026)
+## Bản mới nhất: 1.0.5 (09/11/2026)
 
-**Khác bản 1.0.3** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.4** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Bản đồ lớn (F4) đặt được điểm hẹn**: chuột phải hoặc đúp chuột; hoặc phím mũi tên / WASD đưa dấu **+** giữa bản đồ tới chỗ cần rồi bấm **Enter** (nút "Đặt điểm (Enter)"). Kéo, cuộn, nút +/- trên bản đồ lớn cũng chạy lại.
-- **Phím điểm hẹn đổi từ F6 sang F5** (F6 là phím mở chat của game). Đổi được các phím điểm hẹn, bản đồ lớn, đăng nhập trong F9.
-- **% Growth phần Prime** (trên 75 %) khớp với web.
+- **Cập nhật hoặc mở lại HUD giữa trận**: hiện lại máu, thể lực, đói, khát ngay (trước phải chờ máu thay đổi mới hiện).
+- **Đổi con khi máu đầy** (garage, đổi loài): báo **"ĐỔI CON"** thay vì "BỊ GIẾT". Con nhỏ bị cắn chết 1 phát vẫn báo BỊ GIẾT.
+- **Sửa máu tụt ảo** kiểu 49/1694 (đọc nhầm một chỉ số phụ thành máu).
+- **AI có tên**: nhật ký hiện "Boar", "Deer" thay vì "Mục tiêu #số". Bắt được thêm cú cắn AI bị sót.
+- **Số bay khi cắn người chơi khác**: bỏ "máu tối đa" sai (kiểu 1793/816) và số máu rác.
 
-**[Tải BengIsleHUD-Setup-1.0.4.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.4".
+**[Tải BengIsleHUD-Setup-1.0.5.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.5".
 
 ## Hình ảnh
 
@@ -77,7 +79,7 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
   - Khi bạn chết: `... > Tên bạn: máu/0 · BỊ GIẾT`
 - **Số damage bay giữa màn hình**: xanh = mình cắn, đỏ = bị cắn, vàng = hạ gục / bị giết; 3 cỡ theo độ nặng của cú; bên dưới là máu còn lại / máu tối đa.
 - **Bản đồ nhỏ**: bản đồ Gateway có vùng, tên khu vực; vị trí và hướng của bạn, cả khi bay.
-- **Bản đồ lớn (F4)** và **điểm hẹn (F6)**: chép toạ độ bạn gửi (nút copy vị trí trong game), bấm F5: bản đồ có đường chỉ tới và khoảng cách.
+- **Bản đồ lớn (F4)** và **điểm hẹn (F5)**: chép toạ độ bạn gửi (nút copy vị trí trong game), bấm F5: bản đồ có đường chỉ tới và khoảng cách.
 - **Vị trí nhóm thời gian thực**: cả nhóm cùng cài HUD, **F9 > tick "Chia sẻ vị trí với nhóm"**, nhập **cùng một mã nhóm** và điền *Tên nhân vật*. Mọi người thấy nhau trên bản đồ nhỏ và bản đồ lớn ở mọi khoảng cách, cập nhật 0,5 giây/lần, tối đa 30 người. Chỉ gửi vị trí con của chính mình, máy chủ không lưu gì.
   - Nên dùng mã nhóm **dài, khó đoán** (ví dụ `beng-ca-heo-7391`), đừng dùng tên server hay `1234`.
 - **Bảng Prime (F8)**: trang Prime Quest và Pack dino của web server, mỗi server nhớ riêng.
@@ -102,6 +104,13 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.5 (09/11/2026)
+- Mở lại / cập nhật giữa trận vẫn hiện máu và chỉ số ngay.
+- Đổi con khi máu đầy báo "ĐỔI CON", không báo BỊ GIẾT.
+- Sửa máu tụt ảo (chỉ số phụ đọc nhầm thành máu).
+- Tên AI (Boar, Deer); bắt thêm cú cắn AI bị sót.
+- Bỏ máu tối đa sai và số rác khi cắn người chơi khác.
 
 ### 1.0.4 (09/11/2026)
 - Bản đồ lớn F4 đặt được điểm hẹn (chuột phải, đúp chuột, dấu + và Enter).
