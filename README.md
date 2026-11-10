@@ -29,6 +29,14 @@ F9: cài đặt, kéo thả các bảng, mục Phiên bản có nút cập nhậ
 
 ![Bảng F9](docs/images/3-f9-cap-nhat.jpg)
 
+Bản đồ lớn (F4): vùng di cư (cam), bảo tồn (xanh lá), tuần tra AI (tím), nguồn nước, công trình theo bản đồ sdvn.org; bảng **Lớp bản đồ** bên trái để bật / tắt từng lớp, bấm › xem danh sách tên, bấm tên để tới đó; điểm hẹn có đường chỉ và khoảng cách:
+
+![Bản đồ lớn và bảng Lớp bản đồ](docs/images/4-ban-do-lop.jpg)
+
+Lớp **Thức ăn**: 39 loại, bật cả lớp hoặc từng loại (đỏ = động vật, xanh = cây / nấm, xám = Gastro, trắng = SaltRock):
+
+![Lớp thức ăn trên bản đồ](docs/images/5-thuc-an.jpg)
+
 ## Cài (1 lần, khoảng 3 phút)
 
 1. **Cài BengIsleHUD**: chạy `BengIsleHUD-Setup-x.y.z.exe`.
