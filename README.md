@@ -6,16 +6,16 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.13 (10/11/2026)
+## Bản mới nhất: 1.0.14 (10/11/2026)
 
 **Khác bản 1.0.12** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Sửa F5 điểm hẹn**: đọc đúng toạ độ copy trong game (dạng `-137,924.503, -141,761.858, 40,144.199`), cả khi Windows để định dạng số kiểu Việt Nam.
+- **Sửa F5 điểm hẹn** (1.0.14 sửa thêm lỗi hộp "JavaScript error" khi bấm F5 ở 1.0.13): đọc đúng toạ độ copy trong game (dạng `-137,924.503, -141,761.858, 40,144.199`), cả khi Windows để định dạng số kiểu Việt Nam.
 - Toạ độ trên HUD hiện cùng dạng với game.
 
 **Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
 
-**[Tải BengIsleHUD-Setup-1.0.13.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.13".
+**[Tải BengIsleHUD-Setup-1.0.14.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.14".
 
 ## Hình ảnh
 
@@ -124,6 +124,9 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.14 (10/11/2026)
+- Sửa hộp lỗi JavaScript khi bấm F5 (lỗi của 1.0.13).
 
 ### 1.0.13 (10/11/2026)
 - Sửa F5 điểm hẹn đọc toạ độ copy trong game; toạ độ trên HUD cùng dạng với game.
