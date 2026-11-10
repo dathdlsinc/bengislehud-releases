@@ -6,18 +6,18 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.10 (10/11/2026)
+## Bản mới nhất: 1.0.11 (10/11/2026)
 
-**Khác bản 1.0.9** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.10** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Sửa lỗi bật / tắt lớp trong F4 không có tác dụng**: giờ bấm là đổi ngay trên cả bản đồ lớn và nhỏ.
-- **Lớp Thức ăn** giống sdvn: 39 loại, bật cả lớp hoặc từng loại (đỏ = động vật, xanh = cây / nấm, xám = Gastro, trắng = SaltRock).
+- **Sửa lỗi lớp Thức ăn luôn hiện** dù đang tắt; chấm màu trong bảng Lớp bản đồ hiện đúng màu.
+- **Nhật ký ghi tên kẻ giết kèm loài**, ví dụ `Mhanj206 (Allosaurus 88%) > Beng · BỊ GIẾT` (cần đăng nhập F7).
 
-**[Tải BengIsleHUD-Setup-1.0.10.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.10".
+**[Tải BengIsleHUD-Setup-1.0.11.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.11".
 
 ## Hình ảnh
 
-Đang đánh nhau: bản đồ nhỏ (trái trên), nhật ký cắn / bị cắn (trái), số damage bay (giữa), bảng chỉ số (phải):
+Đang đánh nhau: bản đồ nhỏ có vùng, tên địa điểm và vị trí bạn cùng nhóm (trái trên), nhật ký cắn / bị cắn (trái), số damage bay kèm máu còn lại (giữa), bảng chỉ số với % Growth theo web server (phải):
 
 ![HUD khi đánh nhau](docs/images/1-hud-danh-nhau.jpg)
 
@@ -36,6 +36,10 @@ Bản đồ lớn (F4): vùng di cư (cam), bảo tồn (xanh lá), tuần tra A
 Lớp **Thức ăn**: 39 loại, bật cả lớp hoặc từng loại (đỏ = động vật, xanh = cây / nấm, xám = Gastro, trắng = SaltRock):
 
 ![Lớp thức ăn trên bản đồ](docs/images/5-thuc-an.jpg)
+
+Bị giết: chữ vàng giữa màn hình, nhật ký và bảng chỉ số ghi tên + loài kẻ giết lấy từ lịch sử chết trên web server:
+
+![Bị giết, có tên kẻ giết](docs/images/6-bi-giet.jpg)
 
 ## Cài (1 lần, khoảng 3 phút)
 
@@ -113,6 +117,10 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.11 (10/11/2026)
+- Sửa lớp Thức ăn luôn hiện; màu chấm trong bảng Lớp bản đồ.
+- Nhật ký ghi tên + loài kẻ giết. README có ảnh tính năng.
 
 ### 1.0.10 (10/11/2026)
 - Sửa bật / tắt lớp bản đồ trong F4.
