@@ -6,15 +6,16 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.12 (10/11/2026)
+## Bản mới nhất: 1.0.13 (10/11/2026)
 
-**Khác bản 1.0.11** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.12** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Bản đồ mới theo đúng bản game hiện tại** (Gateway v0.21.7, giống bản đồ trên sdvn.org và PVN), vẽ lại bằng AI cho giống ảnh vệ tinh: có bãi triều Lagoon, không còn bán đảo tây bắc cũ. Nước ngọt màu xanh sáng, dễ nhìn; vị trí sông hồ giữ đúng như game.
-- **Báo ĐỔI CON** khi bạn cất con vào gara / đổi loài, không còn báo nhầm là BỊ GIẾT.
-- **% Growth tự tính khớp web hơn** khi chưa đăng nhập trang server.
+- **Sửa F5 điểm hẹn**: đọc đúng toạ độ copy trong game (dạng `-137,924.503, -141,761.858, 40,144.199`), cả khi Windows để định dạng số kiểu Việt Nam.
+- Toạ độ trên HUD hiện cùng dạng với game.
 
-**[Tải BengIsleHUD-Setup-1.0.12.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.12".
+**Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
+
+**[Tải BengIsleHUD-Setup-1.0.13.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.13".
 
 ## Hình ảnh
 
@@ -98,7 +99,7 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
   - Cất con vào gara / đổi loài: `Tên bạn: ĐỔI CON`
 - **Số damage bay giữa màn hình**: xanh = mình cắn, đỏ = bị cắn, vàng = hạ gục / bị giết; 3 cỡ theo độ nặng của cú; bên dưới là máu còn lại / máu tối đa.
 - **Bản đồ nhỏ**: bản đồ Gateway đúng bản game hiện tại (v0.21.7), có vùng, tên khu vực; vị trí và hướng của bạn, cả khi bay.
-- **Bản đồ lớn (F4)** và **điểm hẹn (F5)**: chép toạ độ bạn gửi (nút copy vị trí trong game), bấm F5: bản đồ có đường chỉ tới và khoảng cách.
+- **Bản đồ lớn (F4)** và **điểm hẹn (F5)**: bạn copy vị trí trong game rồi gửi cho mình (dạng `-137,924.503, -141,761.858, 40,144.199`), mình chép dòng đó rồi bấm F5: bản đồ có đường chỉ tới và khoảng cách. Bấm F5 lần nữa để xoá.
 - **Vị trí nhóm thời gian thực**: cả nhóm cùng cài HUD, **F9 > tick "Chia sẻ vị trí với nhóm"**, nhập **cùng một mã nhóm** và điền *Tên nhân vật*. Mọi người thấy nhau trên bản đồ nhỏ và bản đồ lớn ở mọi khoảng cách, cập nhật 0,5 giây/lần, tối đa 30 người. Chỉ gửi vị trí con của chính mình, máy chủ không lưu gì.
   - Nên dùng mã nhóm **dài, khó đoán** (ví dụ `beng-ca-heo-7391`), đừng dùng tên server hay `1234`.
 - **Bảng Prime (F8)**: trang Prime Quest và Pack dino của web server, mỗi server nhớ riêng.
@@ -123,6 +124,9 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.13 (10/11/2026)
+- Sửa F5 điểm hẹn đọc toạ độ copy trong game; toạ độ trên HUD cùng dạng với game.
 
 ### 1.0.12 (10/11/2026)
 - Bản đồ theo bản game hiện tại (Gateway v0.21.7), vẽ lại bằng AI; nước ngọt xanh sáng.
