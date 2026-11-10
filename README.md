@@ -6,16 +6,17 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.15 (10/11/2026)
+## Bản mới nhất: 1.0.16 (10/11/2026)
 
 **Khác bản 1.0.12** (nội dung này cũng hiện trong F9 > Phiên bản):
 
+- **Sửa lỗi game văng / vào lại server thì HUD mất máu và bản đồ**: HUD tự tìm lại con của bạn; con đã lớn giữ số tối đa của cùng loài.
 - **Sửa hẳn F5 điểm hẹn** (1.0.15): copy vị trí trong game rồi bấm F5 là đặt điểm hẹn; đọc đúng toạ độ copy trong game (dạng `-137,924.503, -141,761.858, 40,144.199`), cả khi Windows để định dạng số kiểu Việt Nam.
 - Toạ độ trên HUD hiện cùng dạng với game.
 
 **Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
 
-**[Tải BengIsleHUD-Setup-1.0.15.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.15".
+**[Tải BengIsleHUD-Setup-1.0.16.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.16".
 
 ## Hình ảnh
 
@@ -124,6 +125,9 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.16 (10/11/2026)
+- Sửa mất máu / bản đồ sau khi game văng hoặc vào lại server; giữ số tối đa cùng loài.
 
 ### 1.0.15 (10/11/2026)
 - Sửa hẳn F5: HUD đọc clipboard đúng cách (trước đó luôn báo chưa có toạ độ).
