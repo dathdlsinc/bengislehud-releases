@@ -6,14 +6,14 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.8 (10/11/2026)
+## Bản mới nhất: 1.0.9 (10/11/2026)
 
-**Khác bản 1.0.7** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.8** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Vùng trên bản đồ theo sdvn.org**: di cư (cam), bảo tồn (xanh lá), tuần tra AI (tím) to và đúng chỗ như trên web; thêm địa điểm, nguồn nước, công trình, vũng bùn. Tên dạng nhãn có chấm màu, không đè nhau.
-- **Đọc web sdvn** (tiếng Anh) ngoài PVN: % Growth, máu / đói / khát, tên + loài kẻ giết mình (cần đăng nhập F7).
+- **F4 > bảng Lớp bản đồ** giống sdvn: Địa điểm, Khu bảo tồn, Vùng di cư, Vùng tuần tra AI, Nguồn nước, Công trình, Vũng bùn, có số lượng và nút bật / tắt.
+- Bấm › để xem danh sách tên, bấm một tên là bản đồ chạy tới chỗ đó.
 
-**[Tải BengIsleHUD-Setup-1.0.8.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.8".
+**[Tải BengIsleHUD-Setup-1.0.9.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.9".
 
 ## Hình ảnh
 
@@ -105,6 +105,9 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.9 (10/11/2026)
+- F4: bảng Lớp bản đồ kiểu sdvn (bật / tắt, số lượng, danh sách tên, bấm để tới).
 
 ### 1.0.8 (10/11/2026)
 - Vùng, địa điểm, nguồn nước, công trình, vũng bùn theo bản đồ sdvn.org; nhãn kiểu sdvn.
