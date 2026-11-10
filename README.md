@@ -6,15 +6,14 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.7 (10/11/2026)
+## Bản mới nhất: 1.0.8 (10/11/2026)
 
-**Khác bản 1.0.6** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.7** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Bản đồ dễ đọc hơn**: tên không còn đè nhau (phóng to sẽ hiện thêm tên), tên hồ, sông, đầm, khu AI, công trình lấy từ IsleMaps nên nằm đúng chỗ. Bản đồ lớn (F4) có bảng chú thích màu.
-- **% Growth chính xác theo web server** (cần đăng nhập F7). Thiếu máu / đói / khát thì lấy từ web.
-- **Biết ai giết mình**: "BỊ GIẾT bởi Tên (Loài %)" theo lịch sử chết trên web. Web không ghi lần chết nào thì HUD báo "có thể là đổi con".
+- **Vùng trên bản đồ theo sdvn.org**: di cư (cam), bảo tồn (xanh lá), tuần tra AI (tím) to và đúng chỗ như trên web; thêm địa điểm, nguồn nước, công trình, vũng bùn. Tên dạng nhãn có chấm màu, không đè nhau.
+- **Đọc web sdvn** (tiếng Anh) ngoài PVN: % Growth, máu / đói / khát, tên + loài kẻ giết mình (cần đăng nhập F7).
 
-**[Tải BengIsleHUD-Setup-1.0.7.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.7".
+**[Tải BengIsleHUD-Setup-1.0.8.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.8".
 
 ## Hình ảnh
 
@@ -93,7 +92,7 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 
 ## Nguồn bản đồ
 
-Bản đồ Gateway, lớp nước ngọt, vùng di cư, khu bảo tồn: [IsleMaps](https://www.islemaps.com) của Pont & Emeara, dùng với sự cho phép của tác giả. Vùng tuần tra AI và tên địa danh: myislemap.com.
+Ảnh nền Gateway và lớp nước ngọt: [IsleMaps](https://www.islemaps.com) của Pont & Emeara, dùng với sự cho phép của tác giả. Vùng di cư, bảo tồn, tuần tra AI, địa điểm, nguồn nước, công trình, vũng bùn: bản đồ của server [sdvn.org](https://sdvn.org).
 
 ## Khi có lỗi
 
@@ -106,6 +105,10 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.8 (10/11/2026)
+- Vùng, địa điểm, nguồn nước, công trình, vũng bùn theo bản đồ sdvn.org; nhãn kiểu sdvn.
+- Đọc trang web sdvn (tiếng Anh): Growth, chỉ số, kẻ giết mình.
 
 ### 1.0.7 (10/11/2026)
 - Tên trên bản đồ không đè nhau, tên từ IsleMaps; chú thích màu trên F4.
