@@ -6,14 +6,15 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.11 (10/11/2026)
+## Bản mới nhất: 1.0.12 (10/11/2026)
 
-**Khác bản 1.0.10** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.11** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Sửa lỗi lớp Thức ăn luôn hiện** dù đang tắt; chấm màu trong bảng Lớp bản đồ hiện đúng màu.
-- **Nhật ký ghi tên kẻ giết kèm loài**, ví dụ `Mhanj206 (Allosaurus 88%) > Beng · BỊ GIẾT` (cần đăng nhập F7).
+- **Bản đồ mới theo đúng bản game hiện tại** (Gateway v0.21.7, giống bản đồ trên sdvn.org và PVN), vẽ lại bằng AI cho giống ảnh vệ tinh: có bãi triều Lagoon, không còn bán đảo tây bắc cũ. Nước ngọt màu xanh sáng, dễ nhìn; vị trí sông hồ giữ đúng như game.
+- **Báo ĐỔI CON** khi bạn cất con vào gara / đổi loài, không còn báo nhầm là BỊ GIẾT.
+- **% Growth tự tính khớp web hơn** khi chưa đăng nhập trang server.
 
-**[Tải BengIsleHUD-Setup-1.0.11.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.11".
+**[Tải BengIsleHUD-Setup-1.0.12.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.12".
 
 ## Hình ảnh
 
@@ -29,7 +30,11 @@ F9: cài đặt, kéo thả các bảng, mục Phiên bản có nút cập nhậ
 
 ![Bảng F9](docs/images/3-f9-cap-nhat.jpg)
 
-Bản đồ lớn (F4): vùng di cư (cam), bảo tồn (xanh lá), tuần tra AI (tím), nguồn nước, công trình theo bản đồ sdvn.org; bảng **Lớp bản đồ** bên trái để bật / tắt từng lớp, bấm › xem danh sách tên, bấm tên để tới đó; điểm hẹn có đường chỉ và khoảng cách:
+Bản đồ lớn (F4), toàn đảo: nền vẽ lại bằng AI theo bản đồ game hiện tại, nước ngọt xanh sáng, tên nguồn nước:
+
+![Bản đồ toàn đảo](docs/images/7-ban-do-ai.jpg)
+
+Phóng to: vùng di cư (cam), bảo tồn (xanh lá), tuần tra AI (tím), nguồn nước, công trình theo bản đồ sdvn.org; bảng **Lớp bản đồ** bên trái để bật / tắt từng lớp, bấm › xem danh sách tên, bấm tên để tới đó; điểm hẹn có đường chỉ và khoảng cách:
 
 ![Bản đồ lớn và bảng Lớp bản đồ](docs/images/4-ban-do-lop.jpg)
 
@@ -40,6 +45,10 @@ Lớp **Thức ăn**: 39 loại, bật cả lớp hoặc từng loại (đỏ = 
 Bị giết: chữ vàng giữa màn hình, nhật ký và bảng chỉ số ghi tên + loài kẻ giết lấy từ lịch sử chết trên web server:
 
 ![Bị giết, có tên kẻ giết](docs/images/6-bi-giet.jpg)
+
+Cất con vào gara / đổi loài: báo **ĐỔI CON**, không tính là bị giết:
+
+![Đổi con](docs/images/8-doi-con.jpg)
 
 ## Cài (1 lần, khoảng 3 phút)
 
@@ -86,8 +95,9 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
   - Bạn cắn: `Tên bạn > Ceratosaurus: damage/máu còn lại`
   - Bị cắn: `Không rõ > Tên bạn: damage/máu còn lại`
   - Khi bạn chết: `... > Tên bạn: máu/0 · BỊ GIẾT`
+  - Cất con vào gara / đổi loài: `Tên bạn: ĐỔI CON`
 - **Số damage bay giữa màn hình**: xanh = mình cắn, đỏ = bị cắn, vàng = hạ gục / bị giết; 3 cỡ theo độ nặng của cú; bên dưới là máu còn lại / máu tối đa.
-- **Bản đồ nhỏ**: bản đồ Gateway có vùng, tên khu vực; vị trí và hướng của bạn, cả khi bay.
+- **Bản đồ nhỏ**: bản đồ Gateway đúng bản game hiện tại (v0.21.7), có vùng, tên khu vực; vị trí và hướng của bạn, cả khi bay.
 - **Bản đồ lớn (F4)** và **điểm hẹn (F5)**: chép toạ độ bạn gửi (nút copy vị trí trong game), bấm F5: bản đồ có đường chỉ tới và khoảng cách.
 - **Vị trí nhóm thời gian thực**: cả nhóm cùng cài HUD, **F9 > tick "Chia sẻ vị trí với nhóm"**, nhập **cùng một mã nhóm** và điền *Tên nhân vật*. Mọi người thấy nhau trên bản đồ nhỏ và bản đồ lớn ở mọi khoảng cách, cập nhật 0,5 giây/lần, tối đa 30 người. Chỉ gửi vị trí con của chính mình, máy chủ không lưu gì.
   - Nên dùng mã nhóm **dài, khó đoán** (ví dụ `beng-ca-heo-7391`), đừng dùng tên server hay `1234`.
@@ -102,10 +112,6 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 - Con đã ở gần bạn trước khi bật HUD có thể chưa có tên loài.
 - Bản portable (nếu có) không tự cập nhật, chỉ bản cài mới tự cập nhật.
 
-## Nguồn bản đồ
-
-Ảnh nền Gateway và lớp nước ngọt: [IsleMaps](https://www.islemaps.com) của Pont & Emeara, dùng với sự cho phép của tác giả. Vùng di cư, bảo tồn, tuần tra AI, địa điểm, nguồn nước, công trình, vũng bùn, điểm thức ăn: bản đồ của server [sdvn.org](https://sdvn.org).
-
 ## Khi có lỗi
 
 Tắt HUD, mở **PowerShell**, chạy lệnh dưới để chép file log ra Desktop:
@@ -117,6 +123,11 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.12 (10/11/2026)
+- Bản đồ theo bản game hiện tại (Gateway v0.21.7), vẽ lại bằng AI; nước ngọt xanh sáng.
+- Báo ĐỔI CON khi cất gara / đổi loài.
+- % Growth tự tính khớp web hơn.
 
 ### 1.0.11 (10/11/2026)
 - Sửa lớp Thức ăn luôn hiện; màu chấm trong bảng Lớp bản đồ.
