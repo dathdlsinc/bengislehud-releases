@@ -6,16 +6,15 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.6 (09/11/2026)
+## Bản mới nhất: 1.0.7 (10/11/2026)
 
-**Khác bản 1.0.5** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.6** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Bản đồ mới** từ [IsleMaps](https://www.islemaps.com) (Pont & Emeara, được phép dùng): vị trí khớp hơn nhiều, biển gần đen, nước ngọt xanh sáng, đầm lầy đầy đủ.
-- **Vùng tuần tra AI** màu đỏ nằm trên vùng di cư (không bị đè).
-- **F9 > Lớp bản đồ**: bật / tắt Nước ngọt, Vùng di cư, Khu bảo tồn, Vùng tuần tra AI, Tên vùng.
-- **Bỏ báo "ĐỔI CON"** của 1.0.5: mất con luôn báo BỊ GIẾT (Rex / Trike cắn chết 1 phát từ máu đầy là có thật).
+- **Bản đồ dễ đọc hơn**: tên không còn đè nhau (phóng to sẽ hiện thêm tên), tên hồ, sông, đầm, khu AI, công trình lấy từ IsleMaps nên nằm đúng chỗ. Bản đồ lớn (F4) có bảng chú thích màu.
+- **% Growth chính xác theo web server** (cần đăng nhập F7). Thiếu máu / đói / khát thì lấy từ web.
+- **Biết ai giết mình**: "BỊ GIẾT bởi Tên (Loài %)" theo lịch sử chết trên web. Web không ghi lần chết nào thì HUD báo "có thể là đổi con".
 
-**[Tải BengIsleHUD-Setup-1.0.6.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.6".
+**[Tải BengIsleHUD-Setup-1.0.7.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.7".
 
 ## Hình ảnh
 
@@ -86,7 +85,7 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 
 ## Chưa có / lưu ý
 
-- Tên kẻ cắn mình (đang hiện *"Không rõ"*).
+- Tên kẻ cắn mình từng cú (đang hiện *"Không rõ"*); tên kẻ giết thì có (theo web, cần F7).
 - Tên AI (động vật) bị cắn; máu AI đọc được với Boar và Deer (loại AI khác chưa có).
 - Server PVN: chưa có máu trước lần đổi đầu tiên, chưa có máu tối đa và thể lực.
 - Con đã ở gần bạn trước khi bật HUD có thể chưa có tên loài.
@@ -107,6 +106,11 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.7 (10/11/2026)
+- Tên trên bản đồ không đè nhau, tên từ IsleMaps; chú thích màu trên F4.
+- % Growth, máu / đói / khát theo trang web server (đăng nhập F7).
+- Tên và loài kẻ giết mình theo lịch sử chết trên web; báo "có thể là đổi con".
 
 ### 1.0.6 (09/11/2026)
 - Bản đồ IsleMaps (Pont & Emeara, được phép dùng): vị trí khớp hơn, biển gần đen, nước ngọt, đầm lầy, di cư, bảo tồn.
