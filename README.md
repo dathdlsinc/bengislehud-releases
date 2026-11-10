@@ -6,14 +6,14 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.9 (10/11/2026)
+## Bản mới nhất: 1.0.10 (10/11/2026)
 
-**Khác bản 1.0.8** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.9** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **F4 > bảng Lớp bản đồ** giống sdvn: Địa điểm, Khu bảo tồn, Vùng di cư, Vùng tuần tra AI, Nguồn nước, Công trình, Vũng bùn, có số lượng và nút bật / tắt.
-- Bấm › để xem danh sách tên, bấm một tên là bản đồ chạy tới chỗ đó.
+- **Sửa lỗi bật / tắt lớp trong F4 không có tác dụng**: giờ bấm là đổi ngay trên cả bản đồ lớn và nhỏ.
+- **Lớp Thức ăn** giống sdvn: 39 loại, bật cả lớp hoặc từng loại (đỏ = động vật, xanh = cây / nấm, xám = Gastro, trắng = SaltRock).
 
-**[Tải BengIsleHUD-Setup-1.0.9.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.9".
+**[Tải BengIsleHUD-Setup-1.0.10.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.10".
 
 ## Hình ảnh
 
@@ -92,7 +92,7 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 
 ## Nguồn bản đồ
 
-Ảnh nền Gateway và lớp nước ngọt: [IsleMaps](https://www.islemaps.com) của Pont & Emeara, dùng với sự cho phép của tác giả. Vùng di cư, bảo tồn, tuần tra AI, địa điểm, nguồn nước, công trình, vũng bùn: bản đồ của server [sdvn.org](https://sdvn.org).
+Ảnh nền Gateway và lớp nước ngọt: [IsleMaps](https://www.islemaps.com) của Pont & Emeara, dùng với sự cho phép của tác giả. Vùng di cư, bảo tồn, tuần tra AI, địa điểm, nguồn nước, công trình, vũng bùn, điểm thức ăn: bản đồ của server [sdvn.org](https://sdvn.org).
 
 ## Khi có lỗi
 
@@ -105,6 +105,10 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.10 (10/11/2026)
+- Sửa bật / tắt lớp bản đồ trong F4.
+- Lớp Thức ăn (39 loại, theo sdvn).
 
 ### 1.0.9 (10/11/2026)
 - F4: bảng Lớp bản đồ kiểu sdvn (bật / tắt, số lượng, danh sách tên, bấm để tới).
