@@ -6,18 +6,21 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.17 (11/11/2026)
+## Bản mới nhất: 1.0.18 (11/11/2026)
 
-**Khác bản 1.0.16** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.17** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Thanh Máu / Thể lực / Thức ăn có số tối đa ngay khi vào game** (lấy con từ gara, vào lại sau khi văng). Server chỉ gửi số tối đa khi khủng long lớn thêm, nên trước đây phải chờ 2 đến 3 phút, con trưởng thành thì không bao giờ có. HUD giờ tính theo % Growth và công thức riêng từng loài (tự học sau 2 lần lớn của loài đó).
-- Số tối đa đang ước tính có dấu `~`, tự đổi sang số thật khi server gửi. Nên **đăng nhập F7** để HUD biết loài và % Growth ngay lúc vào.
+- **Không cần Npcap nữa** (tuỳ chọn): máy chưa cài Npcap thì chuột phải BengIsleHUD > **Run as administrator** là chạy được. Đã cài Npcap thì vẫn như cũ, không cần admin.
+- **Nhật ký cắn đúng hơn**: hết cú cắn ảo (con khác đánh nhau gần mình, bấm chuột ở màn hình hồi sinh); không bỏ sót cú cắn thật mà server báo chậm 2-3 giây.
+- Số tối đa ước tính (`~`) đúng hơn với loài lớn không đều.
+
+**Bản 1.0.17**: thanh Máu / Thể lực / Thức ăn có số tối đa ngay khi vào game (tính theo % Growth, dấu `~` = ước tính; nên đăng nhập F7).
 
 **Bản 1.0.16**: sửa lỗi game văng / vào lại server thì HUD mất máu và bản đồ. **Bản 1.0.15**: sửa hẳn F5 điểm hẹn (copy vị trí trong game rồi bấm F5), toạ độ trên HUD cùng dạng với game.
 
 **Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
 
-**[Tải BengIsleHUD-Setup-1.0.17.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.17".
+**[Tải BengIsleHUD-Setup-1.0.18.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.18".
 
 ## Hình ảnh
 
@@ -58,7 +61,7 @@ Cất con vào gara / đổi loài: báo **ĐỔI CON**, không tính là bị g
 1. **Cài BengIsleHUD**: chạy `BengIsleHUD-Setup-x.y.z.exe`.
    - Nếu Windows hiện *"Windows protected your PC"*: bấm **More info > Run anyway** (app chưa ký số).
    - App tự cài, có biểu tượng BengIsleHUD ở Desktop và Start Menu. Không cần Python, không cần Wireshark.
-2. **Cài Npcap** (driver đọc gói tin):
+2. **Cài Npcap** (driver đọc gói tin). Không muốn cài: bỏ qua bước này và luôn mở BengIsleHUD bằng chuột phải > **Run as administrator**.
    - Mở BengIsleHUD, nếu máy chưa có Npcap thì bấm **F9 > Cài Npcap**: app tải bộ cài chính thức từ npcap.com, bấm *Next / I Agree / Install*.
    - Hoặc tự tải ở <https://npcap.com> và cài mặc định. Máy đã có Wireshark thường đã có Npcap.
    - **Không** tick *"Restrict Npcap driver's access to Administrators only"*. Lỡ tick thì cài lại Npcap.
@@ -127,6 +130,10 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.18 (11/11/2026)
+- Chạy không cần Npcap khi mở bằng Run as administrator (raw socket của Windows).
+- Lọc cú cắn ảo: không nhận khi đang chết, không nhận cú lớn hơn máu tối đa của mình; chờ cú cắn đến chậm tới 3,5 giây.
 
 ### 1.0.17 (11/11/2026)
 - Số tối đa của Máu / Thể lực / Thức ăn có ngay khi vào game: tính theo % Growth và công thức từng loài (dấu `~` = ước tính).
