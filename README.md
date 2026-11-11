@@ -6,17 +6,18 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.16 (10/11/2026)
+## Bản mới nhất: 1.0.17 (11/11/2026)
 
-**Khác bản 1.0.12** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.16** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Sửa lỗi game văng / vào lại server thì HUD mất máu và bản đồ**: HUD tự tìm lại con của bạn; con đã lớn giữ số tối đa của cùng loài.
-- **Sửa hẳn F5 điểm hẹn** (1.0.15): copy vị trí trong game rồi bấm F5 là đặt điểm hẹn; đọc đúng toạ độ copy trong game (dạng `-137,924.503, -141,761.858, 40,144.199`), cả khi Windows để định dạng số kiểu Việt Nam.
-- Toạ độ trên HUD hiện cùng dạng với game.
+- **Thanh Máu / Thể lực / Thức ăn có số tối đa ngay khi vào game** (lấy con từ gara, vào lại sau khi văng). Server chỉ gửi số tối đa khi khủng long lớn thêm, nên trước đây phải chờ 2 đến 3 phút, con trưởng thành thì không bao giờ có. HUD giờ tính theo % Growth và công thức riêng từng loài (tự học sau 2 lần lớn của loài đó).
+- Số tối đa đang ước tính có dấu `~`, tự đổi sang số thật khi server gửi. Nên **đăng nhập F7** để HUD biết loài và % Growth ngay lúc vào.
+
+**Bản 1.0.16**: sửa lỗi game văng / vào lại server thì HUD mất máu và bản đồ. **Bản 1.0.15**: sửa hẳn F5 điểm hẹn (copy vị trí trong game rồi bấm F5), toạ độ trên HUD cùng dạng với game.
 
 **Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
 
-**[Tải BengIsleHUD-Setup-1.0.16.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.16".
+**[Tải BengIsleHUD-Setup-1.0.17.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.17".
 
 ## Hình ảnh
 
@@ -111,6 +112,7 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 - Tên kẻ cắn mình từng cú (đang hiện *"Không rõ"*); tên kẻ giết thì có (theo web, cần F7).
 - Tên AI (động vật) bị cắn; máu AI đọc được với Boar và Deer (loại AI khác chưa có).
 - Server PVN: chưa có máu trước lần đổi đầu tiên, chưa có máu tối đa và thể lực.
+- Loài chơi lần đầu với HUD (trừ Triceratops): số tối đa có sau 2 lần lớn (khoảng 3 phút), từ lần sau thì có ngay. Chưa đăng nhập F7 thì HUD chưa biết loài và % Growth lúc vào, vẫn phải chờ lần lớn đầu tiên.
 - Con đã ở gần bạn trước khi bật HUD có thể chưa có tên loài.
 - Bản portable (nếu có) không tự cập nhật, chỉ bản cài mới tự cập nhật.
 
@@ -125,6 +127,9 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.17 (11/11/2026)
+- Số tối đa của Máu / Thể lực / Thức ăn có ngay khi vào game: tính theo % Growth và công thức từng loài (dấu `~` = ước tính).
 
 ### 1.0.16 (10/11/2026)
 - Sửa mất máu / bản đồ sau khi game văng hoặc vào lại server; giữ số tối đa cùng loài.
