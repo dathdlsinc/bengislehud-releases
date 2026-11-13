@@ -6,11 +6,14 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.20 (13/11/2026)
+## Bản mới nhất: 1.0.21 (14/11/2026)
 
-**Khác bản 1.0.19** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.20** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- Nhật ký cắn ghi cả cú rất nhẹ (từ 1,5 máu), ví dụ cú cào của Beipiaosaurus.
+- **Mỏ đá muối trên bản đồ F4**: dòng riêng trong Lớp bản đồ, bật sẵn, chấm trắng viền cam; bấm tên để tới chỗ đó.
+- Danh sách Thức ăn có tên tiếng Việt.
+
+**Bản 1.0.20**: nhật ký cắn ghi cả cú rất nhẹ (từ 1,5 máu).
 
 **Bản 1.0.19**: cắn hươu / heo rừng nhảy damage lại trên SDVN; không còn cú cắn ảo khi con khác đứng cạnh cắn cùng con mồi.
 
@@ -22,7 +25,7 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 **Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
 
-**[Tải BengIsleHUD-Setup-1.0.20.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.20".
+**[Tải BengIsleHUD-Setup-1.0.21.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.21".
 
 ## Hình ảnh
 
@@ -132,6 +135,9 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFo
 Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.21 (14/11/2026)
+- F4: lớp Mỏ đá muối riêng (bật sẵn), tên thức ăn tiếng Việt.
 
 ### 1.0.20 (13/11/2026)
 - Cú cắn vào con khác từ 1,5 máu (trước: 2).
