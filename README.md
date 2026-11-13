@@ -6,12 +6,16 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.21 (14/11/2026)
+## Bản mới nhất: 1.0.22 (14/11/2026)
 
-**Khác bản 1.0.20** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.21** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Mỏ đá muối trên bản đồ F4**: dòng riêng trong Lớp bản đồ, bật sẵn, chấm trắng viền cam; bấm tên để tới chỗ đó.
-- Danh sách Thức ăn có tên tiếng Việt.
+- **Nhật ký bị cắn ghi cả cú sượt nhẹ** (1 đến 5 máu) khi đang đánh nhau.
+- **Lớp Đá dạ dày (gastrolith) riêng** trong F4 (tắt sẵn), bấm tên để tới chỗ đó.
+- Công tắc Mỏ đá muối được lưu lại.
+- Log theo ngày, giờ VN (`isle-hud-YYYY-MM-DD.log`, giữ 14 ngày).
+
+**Bản 1.0.21**: lớp Mỏ đá muối trên bản đồ F4, tên thức ăn tiếng Việt.
 
 **Bản 1.0.20**: nhật ký cắn ghi cả cú rất nhẹ (từ 1,5 máu).
 
@@ -25,7 +29,7 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 **Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
 
-**[Tải BengIsleHUD-Setup-1.0.21.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.21".
+**[Tải BengIsleHUD-Setup-1.0.22.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.22".
 
 ## Hình ảnh
 
@@ -129,12 +133,15 @@ Cài đặt, server đã lưu và đăng nhập nằm ở `%APPDATA%\isle-hud`: 
 Tắt HUD, mở **PowerShell**, chạy lệnh dưới để chép file log ra Desktop:
 
 ```powershell
-Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud.log" ([Environment]::GetFolderPath("Desktop"))
+Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud-$(Get-Date -Format yyyy-MM-dd).log" ([Environment]::GetFolderPath("Desktop"))
 ```
 
-Gửi file `isle-hud.log` cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
+Gửi file `isle-hud-<ngày>.log` (log của hôm nay; từ bản 1.0.22 mỗi ngày 1 file, giờ VN) cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.22 (14/11/2026)
+- Cú sượt 1-5 máu của mình được ghi khi gần cú lớn (±10 s); lớp Đá dạ dày riêng; lưu công tắc Mỏ đá muối; log theo ngày giờ VN.
 
 ### 1.0.21 (14/11/2026)
 - F4: lớp Mỏ đá muối riêng (bật sẵn), tên thức ăn tiếng Việt.
