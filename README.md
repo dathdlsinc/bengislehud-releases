@@ -6,14 +6,14 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.22 (14/11/2026)
+## Bản mới nhất: 1.0.23 (14/11/2026)
 
-**Khác bản 1.0.21** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.22** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Nhật ký bị cắn ghi cả cú sượt nhẹ** (1 đến 5 máu) khi đang đánh nhau.
-- **Lớp Đá dạ dày (gastrolith) riêng** trong F4 (tắt sẵn), bấm tên để tới chỗ đó.
-- Công tắc Mỏ đá muối được lưu lại.
-- Log theo ngày, giờ VN (`isle-hud-YYYY-MM-DD.log`, giữ 14 ngày).
+- **Tự nhận loài con của bạn ngay lúc spawn**, không cần đăng nhập F7.
+- Số tối đa ước tính (dấu `~`) tự học lại khi sai.
+
+**Bản 1.0.22**: nhật ký bị cắn ghi cả cú sượt nhẹ khi đang đánh nhau; lớp Đá dạ dày riêng trong F4; lưu công tắc Mỏ đá muối; log theo ngày giờ VN.
 
 **Bản 1.0.21**: lớp Mỏ đá muối trên bản đồ F4, tên thức ăn tiếng Việt.
 
@@ -29,7 +29,7 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 **Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
 
-**[Tải BengIsleHUD-Setup-1.0.22.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.22".
+**[Tải BengIsleHUD-Setup-1.0.23.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.23".
 
 ## Hình ảnh
 
@@ -139,6 +139,9 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud-$(Get-Date -Format yyyy-MM
 Gửi file `isle-hud-<ngày>.log` (log của hôm nay; từ bản 1.0.22 mỗi ngày 1 file, giờ VN) cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.23 (14/11/2026)
+- Loài con mình từ bộ kỹ năng lúc spawn (không cần F7), ra lại cùng loài giữ tên; ước tính số tối đa tự học lại sau 3 số thật lệch.
 
 ### 1.0.22 (14/11/2026)
 - Cú sượt 1-5 máu của mình được ghi khi gần cú lớn (±10 s); lớp Đá dạ dày riêng; lưu công tắc Mỏ đá muối; log theo ngày giờ VN.
