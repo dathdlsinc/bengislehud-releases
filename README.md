@@ -6,12 +6,14 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.23 (14/11/2026)
+## Bản mới nhất: 1.0.24 (19/11/2026)
 
-**Khác bản 1.0.22** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.23** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Tự nhận loài con của bạn ngay lúc spawn**, không cần đăng nhập F7.
-- Số tối đa ước tính (dấu `~`) tự học lại khi sai.
+- **Không còn mất cú kết liễu** khi server báo chết trễ; giết bằng 1 cú hiện **HẠ GỤC 1 CÚ**.
+- Con mồi bạn cắn mà người khác kết liễu: chỉ hiện "đã chết (không rõ ai giết)", không tính cho bạn.
+
+**Bản 1.0.23**: tự nhận loài con của bạn ngay lúc spawn, không cần đăng nhập F7; số tối đa ước tính (dấu `~`) tự học lại khi sai.
 
 **Bản 1.0.22**: nhật ký bị cắn ghi cả cú sượt nhẹ khi đang đánh nhau; lớp Đá dạ dày riêng trong F4; lưu công tắc Mỏ đá muối; log theo ngày giờ VN.
 
@@ -29,7 +31,7 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 **Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
 
-**[Tải BengIsleHUD-Setup-1.0.23.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.23".
+**[Tải BengIsleHUD-Setup-1.0.24.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.24".
 
 ## Hình ảnh
 
@@ -139,6 +141,10 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud-$(Get-Date -Format yyyy-MM
 Gửi file `isle-hud-<ngày>.log` (log của hôm nay; từ bản 1.0.22 mỗi ngày 1 file, giờ VN) cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.24 (19/11/2026)
+- Cú kết liễu: giờ chết = lúc con mồi ngừng cử động (server báo chết trễ 3-8 giây); tính cho bạn khi có cú bấm cắn trong 3,5 giây trước đó, không thì hiện "đã chết (không rõ ai giết)".
+- Giết thú bằng 1 cú (hươu 90 máu) hiện "HẠ GỤC 1 CÚ".
 
 ### 1.0.23 (14/11/2026)
 - Loài con mình từ bộ kỹ năng lúc spawn (không cần F7), ra lại cùng loài giữ tên; ước tính số tối đa tự học lại sau 3 số thật lệch.
