@@ -37,7 +37,7 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 ## Hình ảnh
 
-Đang đánh nhau: bản đồ nhỏ có vùng, tên địa điểm và vị trí bạn cùng nhóm (trái trên), nhật ký cắn / bị cắn (trái), số damage bay kèm máu còn lại (giữa), bảng chỉ số với % Growth theo web server (phải):
+Đang đánh nhau: bản đồ nhỏ live có vùng, nguồn nước, điểm hẹn và vị trí bạn cùng nhóm (trái trên); nhật ký cắn / bị cắn có **HẠ GỤC**, **HẠ GỤC 1 CÚ** và con mồi do người khác kết liễu (trái); số damage bay kèm máu còn lại (giữa); bảng chỉ số tự nhận loài, có % Growth theo web server (phải):
 
 ![HUD khi đánh nhau](docs/images/1-hud-danh-nhau.jpg)
 
@@ -57,7 +57,7 @@ Phóng to: vùng di cư (cam), bảo tồn (xanh lá), tuần tra AI (tím), ngu
 
 ![Bản đồ lớn và bảng Lớp bản đồ](docs/images/4-ban-do-lop.jpg)
 
-Lớp **Thức ăn**: 39 loại, bật cả lớp hoặc từng loại (đỏ = động vật, xanh = cây / nấm, xám = Gastro, trắng = SaltRock):
+Lớp **Thức ăn**, **Mỏ đá muối** và **Đá dạ dày**: 39 loại thức ăn, bật cả lớp hoặc từng loại (đỏ = động vật, xanh = cây / nấm, trắng viền cam = mỏ đá muối, xám = đá dạ dày):
 
 ![Lớp thức ăn trên bản đồ](docs/images/5-thuc-an.jpg)
 
