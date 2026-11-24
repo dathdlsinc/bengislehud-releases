@@ -6,11 +6,13 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 > Repo này chỉ chứa **bộ cài** và dữ liệu tự cập nhật, không có mã nguồn.
 
-## Bản mới nhất: 1.0.26 (21/11/2026)
+## Bản mới nhất: 1.0.27 (24/11/2026)
 
-**Khác bản 1.0.25** (nội dung này cũng hiện trong F9 > Phiên bản):
+**Khác bản 1.0.26** (nội dung này cũng hiện trong F9 > Phiên bản):
 
-- **Tiếng báo máu thấp**: dưới 20% kêu nhỏ, dưới 10% kêu to hơn. Tắt / bật ở F9.
+- Sửa lỗi có lúc HUD báo **BỊ GIẾT khi con vẫn sống**, rồi bỏ qua mọi cú cắn sau đó.
+
+**Bản 1.0.26**: tiếng báo máu thấp (dưới 20% kêu nhỏ, dưới 10% kêu to hơn), tắt / bật ở F9.
 
 **Bản 1.0.25**: sửa lỗi sau khi ăn HUD bỏ qua mọi cú bạn cắn (máu tối đa 0,08); máu không còn đứng yên sau khi ăn.
 
@@ -34,7 +36,7 @@ HUD **chỉ đọc gói tin mạng** của game (qua Npcap). Không gửi gì v�
 
 **Bản 1.0.12**: bản đồ theo đúng bản game hiện tại (Gateway v0.21.7) vẽ lại bằng AI, nước ngọt xanh sáng; báo **ĐỔI CON** khi cất gara / đổi loài; % Growth tự tính khớp web hơn.
 
-**[Tải BengIsleHUD-Setup-1.0.26.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.26".
+**[Tải BengIsleHUD-Setup-1.0.27.exe](https://github.com/dathdlsinc/bengislehud-releases/releases/latest)**: vào trang Release, mục *Assets*. Đang dùng bản cài thì chỉ cần F9 > Phiên bản > "Cập nhật lên 1.0.27".
 
 ## Hình ảnh
 
@@ -144,6 +146,9 @@ Copy-Item -Force "$env:APPDATA\isle-hud\logs\isle-hud-$(Get-Date -Format yyyy-MM
 Gửi file `isle-hud-<ngày>.log` (log của hôm nay; từ bản 1.0.22 mỗi ngày 1 file, giờ VN) cho Beng, kèm mô tả: đang chơi loài gì, làm gì thì lỗi.
 
 ## Nhật ký phiên bản
+
+### 1.0.27 (24/11/2026)
+- Bản tin giống bản tin chết khi con còn sống không còn bị báo BỊ GIẾT (chờ 8 giây xem chỉ số của con còn đổi không; bị cắn chết vẫn báo ngay).
 
 ### 1.0.26 (21/11/2026)
 - Tiếng báo khi máu của bạn tụt dưới 20% (nhỏ) và dưới 10% (to hơn), công tắc trong F9.
